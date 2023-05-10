@@ -269,6 +269,7 @@ export class PdfViewerComponent
   }
 
   ngOnInit() {
+    console.log('HELLO WORLD!')
     this.initialize();
     this.setupResizeListener();
   }
@@ -312,6 +313,7 @@ export class PdfViewerComponent
   }
 
   public updateSize() {
+    console.log('UPDATING THE SIZE!')
     from(
       this._pdf.getPage(
         this.pdfViewer.currentPageNumber
